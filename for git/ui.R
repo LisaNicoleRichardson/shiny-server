@@ -14,7 +14,7 @@ library(plyr)
 library(memisc)
 library(xlsx)
 
-ui<- fluidPage(
+shinyUI<- fluidPage(
   tabsetPanel(
     tabPanel("Metadata", 
              fluidRow(
