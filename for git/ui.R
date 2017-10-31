@@ -21,7 +21,7 @@ ui<- fluidPage(
                column(8, tags$h1("Methodology and caveats of Landings data by ICES rectangle for all UK registered vessels")
                ),
                column(4,
-                      tags$img( height = 220, width = 277, src = "~/srv/shiny-server/lisa/MMO_logo2.jpg")
+                      tags$img( height = 220, width = 277, src = "/srv/shiny-server/for git/MMO_logo2.jpg")
                )
              ),
              fluidRow(
@@ -56,7 +56,7 @@ tabPanel("Maps",
                   actionButton(inputId = "mapGo", label = "Update")
            ),
            column(4,
-                  tags$img( height = 220, width = 277, src = "~/srv/shiny-server/lisa/MMO_logo2.jpg")
+                  tags$img( height = 220, width = 277, src = "/srv/shiny-server/for git/MMO_logo2.jpg")
            )
          ),
          fluidRow(

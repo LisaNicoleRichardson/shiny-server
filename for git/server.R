@@ -49,11 +49,10 @@ server <- function(input, output){
   
 }
 #FOR MAPS
-setwd('~/srv/shiny-server/lisa')
-mapData <- read.csv("mapData_2012_2016.csv", header=TRUE, sep=",")
+mapData <- read.csv("/srv/shiny-server/for git/mapData_2012_2016.csv", header=TRUE, sep=",")
 #Shapefiles and ranges
-coastline <- read.shapefile("~/srv/shiny-server/lisa/ne_10m_coastline")
-coastline2 <- read.shapefile("~/srv/shiny-server/lisa/shape/eez_lr")
+coastline <- read.shapefile("/srv/shiny-server/for git/ne_10m_coastline")
+coastline2 <- read.shapefile("/srv/shiny-server/for git/shape/eez_lr")
 
 #Create map data
 colnames(mapData)<- c("Year","Rect","Species","QtyT","ValGBP")
