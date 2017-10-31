@@ -14,7 +14,7 @@ library(plyr)
 library(memisc)
 library(xlsx)
 
-server <- function(input, output){
+shinyServer <- function(input, output){
   
   #FOR METADATA
   #Text Outputs 
@@ -153,7 +153,7 @@ map_v<-
       
     }
     legend.grid("bottomleft", breaks = (annual_breaks_Landings_v()/1000), type = 2, inset = c(0.02, 0.02),
-                title = paste("Value (£ thousands)"), 
+                title = paste("Value (Â£ thousands)"), 
                 y.intersp = 0.8, bg = "cornsilk", col = colour_scale, cex = 1.2)
   })
 
